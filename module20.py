@@ -119,20 +119,6 @@ average = sum(numbers) / len(numbers)
 print("Average of tuple elements:", average)
 
 
-# All About Dictionary
-student_data = {
-    'id1': {'name': ['Sara'], 'class': ['V'], 'subject_integration': ['english, math, science']},
-    'id2': {'name': ['David'], 'class': ['V'], 'subject_integration': ['english, math, science']},
-    'id3': {'name': ['Sara'], 'class': ['V'], 'subject_integration': ['english, math, science']},
-    'id4': {'name': ['Surya'], 'class': ['V'], 'subject_integration': ['english, math, science']}
-}
-
-result = {}
-for key, value in student_data.items():
-    if value not in result.values():
-        result[key] = value
-
-print(result)
 
 
 # Get rid of the duplicates
@@ -164,25 +150,6 @@ print("Original dictionary:", original_dict)
 print("Mirrored dictionary:", mirrored_dict)
 
 
-# Sets and Arrays
-int_set = {10, 20, 30, 40}
-print("1. Set with integer elements:", int_set)
-
-mixed_set = {10, "Hello", 3.14, True}
-print("2. Set with mixed data types:", mixed_set)
-
-set_with_duplicates = {1, 2, 3, 4, 3, 2}
-print("3. Set created from elements with duplicates:", set_with_duplicates)
-
-list_elements = [1, 2, 3, 2]
-set_from_list = set(list_elements)
-print("4. Set created from list:", set_from_list)
-
-original_list = [0, 1, 3, 4, 5]
-temp_set = set(original_list)
-first_element = original_list[0]
-temp_set.remove(first_element)
-print("5. Set after removing first element:", temp_set)
 
 
 # Set Operations
@@ -215,21 +182,6 @@ print("Intersection:", fset.intersection(another_fset))
 print("Union:", fset.union(another_fset))
 
 
-# Advanced Python Functions
-numbers1 = [1, 2, 3]
-numbers2 = [4, 5, 6]
-result = map(lambda x, y: x + y, numbers1, numbers2)
-print("Addition of two lists")
-print(list(result))
-
-nums = [1, 2, 3, 4, 5]
-
-def sq(n):
-    return n * n
-
-square = list(map(sq, nums))
-print("Square of numbers in list")
-print(square)
 
 
 # Hands on Map
